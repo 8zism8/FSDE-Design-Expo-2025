@@ -1,13 +1,235 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Expo Videos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoding the Unspoken: Additional Resources</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #DDDDDD;
+      color: #333;
+      line-height: 1.6;
+      padding: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-top: 1rem;
+    }
+    
+    header {
+      text-align: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
+    }
+    
+    .logo {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+    
+    h1 {
+      font-size: 1.6rem;
+      color: #8B1F04;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+    
+    .authors {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    
+    .resources {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .card {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-header {
+      background-color: #8B1F04;
+      color: white;
+      padding: 0.8rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    
+    .card-content {
+      padding: 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card-content p {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    .card-footer {
+      padding: 0.8rem;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #8B1F04;
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+    
+    .btn:hover {
+      background-color: #5C8727;
+    }
+    
+    .main-resource {
+      background-color: #f1f1f1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      text-align: center;
+      border-left: 4px solid #5C8727;
+    }
+    
+    .main-resource i {
+      font-size: 2.5rem;
+      color: #8B1F04;
+      margin-bottom: 1rem;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #555;
+      font-size: 0.8rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e0e0e0;
+    }
+    
+    @media (max-width: 600px) {
+      .resources {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-  <h1>Check out the presentation videos</h1>
-  <ul>
-    <li><a href="https://youtu.be/">Video 1</a></li>
-    <li><a href="https://youtu.be/">Video 2</a></li>
-  </ul>
+  <div class="container">
+    <header>
+      <img src="/api/placeholder/150/60" alt="University of Prince Edward Island" class="logo" />
+      <h1>FSDE DESIGN EXPO 2025</h1>
+      <h2>Decoding the Unspoken</h2>
+      <p class="subtitle">Enhancing Social Awareness in Robotic Systems Through Non-Verbal Human Cues</p>
+      <p class="authors">M. Soroush Izadan and Trung D. Ngo</p>
+    </header>
+    
+    <div class="main-resource">
+      <i class="fas fa-file-pdf"></i>
+      <h3>Project Documentation</h3>
+      <p>Access the detailed research paper with equations and methodology for the Interaction Willingness Factor (IWF).</p>
+      <a href="iwf-research-paper.pdf" class="btn" target="_blank">Download PDF</a>
+    </div>
+    
+    <h3>Video Demonstrations</h3>
+    <div class="resources">
+      <div class="card">
+        <div class="card-header">
+          Facial Approachability
+        </div>
+        <div class="card-content">
+          <p>Fig 3. Notice how a neutral emotion with indirect gaze is considered 62% approachable but with high uncertainty.</p>
+          <img src="/api/placeholder/200/150" alt="Facial approachability example" style="width: 100%; border-radius: 5px; margin-bottom: 1rem;">
+        </div>
+        <div class="card-footer">
+          <a href="https://youtu.be/placeholder1" class="btn" target="_blank">Watch Video</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          Nonverbal Cue Detection
+        </div>
+        <div class="card-content">
+          <p>Fig 2. The nonverbal cue detection pipeline running in parallel with all DL models.</p>
+          <img src="/api/placeholder/200/150" alt="Nonverbal cue detection pipeline" style="width: 100%; border-radius: 5px; margin-bottom: 1rem;">
+        </div>
+        <div class="card-footer">
+          <a href="https://youtu.be/placeholder2" class="btn" target="_blank">Watch Video</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          Engagement Analysis
+        </div>
+        <div class="card-content">
+          <p>Fig 4. Single head turn causes minor change; multiple turns decrease value significantly.</p>
+          <img src="/api/placeholder/200/150" alt="Engagement analysis" style="width: 100%; border-radius: 5px; margin-bottom: 1rem;">
+        </div>
+        <div class="card-footer">
+          <a href="https://youtu.be/placeholder3" class="btn" target="_blank">Watch Video</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 FSDE Design Expo - University of Prince Edward Island</p>
+  </footer>
 </body>
 </html>
